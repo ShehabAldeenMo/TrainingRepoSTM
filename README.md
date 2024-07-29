@@ -19,8 +19,7 @@ This presentation provides an introduction to Git and GitHub, covering their fun
 11. [Committing Changes](#committing-changes)
 12. [Viewing Commit History](#viewing-commit-history)
 13. [Removing / Reset Files](#removing-reset-files)
-14. [Resetting Changes](#resetting-changes)
-15. [Using .gitignore](#using-gitignore)
+14. [Using .gitignore](#using-gitignore)
 
 ## Introduction to Git
 
