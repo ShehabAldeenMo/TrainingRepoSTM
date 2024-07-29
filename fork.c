@@ -7,6 +7,9 @@
 #include <stdlib.h>
 int global = 10;
 
+
+/* Test Case 22222222 */
+
 int main(int argc, char ** argv)
 {
 	printf("current PID = %d\n", getpid());
