@@ -227,6 +227,21 @@ git reset filename
 git reset --hard
 ```
 
++ Soft Reset: Reset to a specific commit, keeping changes in the working directory and staging area.
+```
+git reset --soft commit-hash
+```
+
++ Mixed Reset: Reset to a specific commit, keeping changes in the working directory but unstaging them.
+```
+git reset --mixed commit-hash
+```
+
++ Hard Reset: Reset to a specific commit, discarding all changes in the working directory and staging area.
+```
+git reset --hard commit-hash
+```
+
 
 ## Using .gitignore
 The `.gitignore` file is a powerful tool in Git that helps manage which files and directories should be ignored by version control. This is useful for keeping your repository clean from unnecessary files, such as temporary files, build outputs, and other files that do not need to be tracked.
