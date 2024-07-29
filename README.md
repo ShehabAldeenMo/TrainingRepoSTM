@@ -78,6 +78,3 @@ GitHub is a web-based platform that uses Git for version control and provides ad
 - [Pro Git Book](https://git-scm.com/book/en/v2)
 - [GitHub Learning Lab](https://lab.github.com/)
 
-## Contact
-
-For further information or questions, please contact [Your Name](mailto:your.email@example.com).
