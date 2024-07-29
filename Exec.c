@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <unistd.h>
 
-/*  Training usecase */
+/* Training usecase */
+/* Issue fixed */
 
 int main(){
 	char charachter = getchar();
