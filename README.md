@@ -18,8 +18,8 @@ This presentation provides an introduction to Git and GitHub, covering their fun
 10. [Adding Files](#adding-files)
 11. [Committing Changes](#committing-changes)
 12. [Viewing Commit History](#viewing-commit-history)
-13. [Removing / Reset Files](#removing-/-reset-files)
-14. [Using .gitignore](#using-gitignore)
+13. [Removing Reset Files](#removing-reset-files)
+15. [Using .gitignore](#using-gitignore)
 
 ## Introduction to Git
 
@@ -205,7 +205,7 @@ git log
 git log --oneline
 ```
 
-## Removing / Reset Files
+## Removing Reset Files
 + Remove a file from the working directory and the staging area.
 ```
 git rm filename
