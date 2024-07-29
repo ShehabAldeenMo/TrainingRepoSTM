@@ -12,6 +12,7 @@ This presentation provides an introduction to Git and GitHub, covering their fun
 4. [Key Features of GitHub](#key-features-of-github)
 5. [Best Practices](#best-practices)
 6. [Resources](#resources)
+7. [Explanation](#Explanation)
 
 ## Introduction to Git
 
@@ -78,3 +79,12 @@ GitHub is a web-based platform that uses Git for version control and provides ad
 - [Pro Git Book](https://git-scm.com/book/en/v2)
 - [GitHub Learning Lab](https://lab.github.com/)
 
+## Explanation
+### Branches
+![1](https://github.com/user-attachments/assets/35fd7305-9cf4-4c07-bef0-b29d353d1ec1)
+
+### 1. Creating a Branch
+
+Create a new branch called `branch-name`.
+```bash
+git branch branch-name
