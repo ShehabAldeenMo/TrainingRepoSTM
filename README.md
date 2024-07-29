@@ -12,7 +12,15 @@ This presentation provides an introduction to Git and GitHub, covering their fun
 4. [Key Features of GitHub](#key-features-of-github)
 5. [Best Practices](#best-practices)
 6. [Resources](#resources)
-7. [Explanation](#Explanation)
+7. [Branches](#Branches)
+8. [Cloning a Repository](#cloning-a-repository)
+9. [Checking Status](#checking-status)
+10. [Adding Files](#adding-files)
+11. [Committing Changes](#committing-changes)
+12. [Viewing Commit History](#viewing-commit-history)
+13. [Removing / Reset Files](#removing-reset-files)
+14. [Resetting Changes](#resetting-changes)
+15. [Using .gitignore](#using-gitignore)
 
 ## Introduction to Git
 
@@ -79,12 +87,149 @@ GitHub is a web-based platform that uses Git for version control and provides ad
 - [Pro Git Book](https://git-scm.com/book/en/v2)
 - [GitHub Learning Lab](https://lab.github.com/)
 
-## Explanation
-### Branches
+## Branches
+Most of these commands that I don't remeber them all but I try to collect them in one file
+
 ![1](https://github.com/user-attachments/assets/35fd7305-9cf4-4c07-bef0-b29d353d1ec1)
 
 ### 1. Creating a Branch
 
 Create a new branch called `branch-name`.
-```bash
+```
 git branch branch-name
+```
+
+### 2. Listing Branches
+
+List all branches in the repository, indicating the current branch with an asterisk.
+```
+git branch
+```
+
+### 3. git switch
+
+Create a new branch called `branch-name`.
+```
+git switch branch-name
+```
+
+### 4. Renaming a Branch
+
+Rename a specific branch `old-name` to `new-name`.
+```
+git branch -m old-name new-name
+```
+
+### 5. Deleting a Branch
+
+Create a new branch called `branch-name`.
+```
+git branch -d branch-name
+```
+
+### 6. Merging Branches  
+
+Merge the changes from `branch-name` into the current branch.
+```
+git merge branch-name
+```
+
+### 7. Rebasing a Branch
+
+Rebase the current branch onto `base-branch`.
+```
+git rebase base-branch
+```
+
+### 8. Pushing Branches
+
+Push a new branch to the remote repository.
+```
+git push origin branch-name
+```
+
+### 9. Deleting Remote Branches
+
+Delete a branch on the remote repository.
+```
+git push origin --delete branch-name
+```
+
+### 10. Tracking Branches
+Set up a local branch to track a remote branch.
+
+```
+git branch --track local-branch-name origin/remote-branch-name
+```
+
+## Cloning a Repository
+
+Clone an existing repository from a remote server to your local machine.
+```
+git clone https://github.com/username/repository.git
+```
+
+## Checking Status
+Check the status of your working directory and staging area. This command shows which changes have been staged, which haven't, and which files aren't being tracked by Git.
+
+```
+git status
+```
+
+## Adding Files
++ Stage changes (new files, modifications, deletions) to the staging area, preparing them for the next commit.
+```
+git add filename
+```
+
++ Stage all changes in the current directory.
+```
+git add .
+```
+
+
+## Committing Changes
+Commit the staged changes to the repository with a descriptive message.
+```
+git commit -m "Your commit message here"
+```
+
+
+## Viewing Commit History
++ Show a list of all previous commits in the repository, along with details like commit ID, author, date, and message.
+```
+git log
+```
+
++ Display a one-line summary of each commit.
+```
+git log --oneline
+```
+
+## Removing / Reset Files
++ Remove a file from the working directory and the staging area.
+```
+git rm filename
+```
+
++ Remove a file only from the staging area but keep it in the working directory.
+```
+git rm --cached filename
+```
+
++ Unstage a file, keeping the changes in the working directory.
+
+```
+git reset filename
+```
+
++ Reset the staging area and the working directory to the last commit state.
+```
+git reset --hard
+```
+
+
+
+
+
+
